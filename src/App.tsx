@@ -63,6 +63,7 @@ const App: React.FC = () => {
             key={widget.id}
             position={{ x: widget.x, y: widget.y }}
             onStop={(_e, data) => updateNotePosition(widget.id, data.x, data.y)}
+            bounds="parent"
           >
             <div className="bg-yellow-300 p-3 cursor-move absolute w-24 h-24">
               {widget.content}
